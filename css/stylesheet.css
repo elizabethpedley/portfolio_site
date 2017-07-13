@@ -140,7 +140,7 @@ hr{
     width: 100%;
     display: block;
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 319px;
     height: auto;
 }
 
@@ -152,10 +152,21 @@ hr{
     margin: .4em 0;
 }
 
+.work_example p{
+    text-align: center;
+    margin-top: 0;
+    color: #8c676d;
+}
+
 .work_example a{
     font-weight: 300;
     color: #555;
     text-align: center;
     text-decoration: none;
     margin-bottom: 3em;
+}
+
+.work_example a:hover{
+    font-weight: 500;
+    color: #82aeb1;
 }
