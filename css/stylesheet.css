@@ -1,23 +1,24 @@
 /* Styles applied to Elements */
-*{
+
+* {
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
 }
 
-body{
+body {
     width: 95%;
     margin: 0 auto;
 }
 
-h1{
+h1 {
     font-size: 2.5em;
 }
 
-h2{
+h2 {
     font-size: 2em;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     width: 100%;
@@ -25,26 +26,8 @@ header{
     margin: 0 auto;
 }
 
-hgroup{
-    text-align: right;
-    margin-right: 15px;
-    flex-grow: 3;
-    color: #555;
-}
-
-hgroup h1{
-    margin-bottom: 0;
-    font-weight: 300;
-}
-
-hgroup h3{
-    margin-top: .5em;
-    font-weight: 400;
-}
-
-hr{
+hr {
     height: 3px;
-    color: #8c676d;
     background-color: #8c676d;
     max-width: 1060px;
     margin-left: auto;
@@ -52,19 +35,36 @@ hr{
 
 /* Styles applied to Classes */
 
-.logo_container{
-    flex-grow: 1;
+.logo-container {
+    width: 25%;
     margin-left: 15px;
     display: flex;
     align-items: center;
 }
 
-.logo_container img{
+.logo-container img {
     width: 40%;
     max-width: 200px;
 }
 
-.hero_image{
+.page-title {
+    text-align: right;
+    margin-right: 15px;
+    width: 75%;
+    color: #555;
+}
+
+.page-title h1 {
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+.page-title h3 {
+    margin-top: .5em;
+    font-weight: 400;
+}
+
+.hero-image {
     width: 100%;
     height: auto;
     max-width: 1060px;
@@ -72,7 +72,7 @@ hr{
     display: block;
 }
 
-.section_title{
+.section-title {
     width: 100%;
     max-width: 1060px;
     color: #8c676d;
@@ -82,7 +82,7 @@ hr{
     font-weight: 400;
 }
 
-.about_me{
+.about-me {
     width: 100%;
     margin: 0 auto;
     max-width: 1060px;
@@ -90,61 +90,60 @@ hr{
     font-size: 1em;
 }
 
-.about_me img{
+.about-me img {
     float: right;
     width: 25%;
     margin: 0 15px 5px 10px;
     max-width: 450px;
 }
 
-.about_me p{
+.about-me p {
     margin: 0 15px;
     line-height: 1.5;
 }
 
-.about_me a{
+.about-me a {
     text-decoration: none;
     color: #82aeb1;
     font-weight: 400;
 }
 
-.about_me a:hover{
+.about-me a:hover {
     font-weight: 500;
 }
 
-.about_me:after{
-    content:"";
+.about-me:after {
+    content: "";
     clear: both;
     display: table;
 }
 
-.featured_work_container{
+.featured-work {
     display: flex;
     width: 100%;
     max-width: 1060px;
     margin: 0 auto;
 }
 
-.work_example{
+.work-example {
     flex-grow: 1;
     display: flex;
-    justify-content: center;
     flex-direction: column;
 }
 
-.work_example:nth-child(2){
+.work-example:nth-child(2) {
     margin: 0 2em;
 }
 
-.work_example img{
+.work-example img {
     width: 100%;
     display: block;
     margin: 0 auto;
-    max-width: 319px;
+    max-width: 800px;
     height: auto;
 }
 
-.work_example h2{
+.work-example h2 {
     font-weight: 400;
     color: #555;
     text-align: center;
@@ -152,13 +151,13 @@ hr{
     margin: .4em 0;
 }
 
-.work_example p{
+.work-example p {
     text-align: center;
     margin-top: 0;
     color: #8c676d;
 }
 
-.work_example a{
+.work-example a {
     font-weight: 300;
     color: #555;
     text-align: center;
@@ -166,7 +165,63 @@ hr{
     margin-bottom: 3em;
 }
 
-.work_example a:hover{
+.work-example a:hover {
     font-weight: 500;
     color: #82aeb1;
+}
+
+/* Responsive Styles */
+
+@media (max-width:875px) {
+    .featured-work {
+        flex-direction: column;
+    }
+
+    .work-example:nth-child(2) {
+        margin: 0;
+    }
+
+    .about-me img {
+        width: 35%;
+    }
+
+    .logo-container img {
+        width: 55%;
+    }
+}
+
+@media (max-width:610px) {
+    h1 {
+        font-size: 1.7em;
+    }
+
+    h3 {
+        font-size: .8em;
+    }
+
+    .logo-container img {
+        width: 65%;
+    }
+
+    .about-me img {
+        width: 50%;
+    }
+}
+
+@media (max-width:400px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: .7em;
+    }
+
+    .logo-container img {
+        width: 85%;
+    }
+
+    .about-me img {
+        width: 60%;
+    }
 }
