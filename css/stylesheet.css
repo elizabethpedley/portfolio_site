@@ -1,18 +1,161 @@
 /* Styles applied to Elements */
-body{
-    width: 100%;
-    margin: 0;
+*{
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
 
+body{
+    width: 95%;
+    margin: 0 auto;
+}
 
+h1{
+    font-size: 2.5em;
+}
 
+h2{
+    font-size: 2em;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+hgroup{
+    text-align: right;
+    margin-right: 15px;
+    flex-grow: 3;
+    color: #555;
+}
+
+hgroup h1{
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+hgroup h3{
+    margin-top: .5em;
+    font-weight: 400;
+}
+
+hr{
+    height: 3px;
+    color: #8c676d;
+    background-color: #8c676d;
+    max-width: 1060px;
+    margin-left: auto;
+}
 
 /* Styles applied to Classes */
+
+.logo_container{
+    flex-grow: 1;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.logo_container img{
+    width: 40%;
+    max-width: 200px;
+}
 
 .hero_image{
     width: 100%;
     height: auto;
     max-width: 1060px;
-    margin: 0 auto;
+    margin: 30px auto;
     display: block;
+}
+
+.section_title{
+    width: 100%;
+    max-width: 1060px;
+    color: #8c676d;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    font-weight: 400;
+}
+
+.about_me{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1060px;
+    color: #555;
+    font-size: 1em;
+}
+
+.about_me img{
+    float: right;
+    width: 25%;
+    margin: 0 15px 5px 10px;
+    max-width: 450px;
+}
+
+.about_me p{
+    margin: 0 15px;
+    line-height: 1.5;
+}
+
+.about_me a{
+    text-decoration: none;
+    color: #82aeb1;
+    font-weight: 400;
+}
+
+.about_me a:hover{
+    font-weight: 500;
+}
+
+.about_me:after{
+    content:"";
+    clear: both;
+    display: table;
+}
+
+.featured_work_container{
+    display: flex;
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.work_example{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.work_example:nth-child(2){
+    margin: 0 2em;
+}
+
+.work_example img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    height: auto;
+}
+
+.work_example h2{
+    font-weight: 400;
+    color: #555;
+    text-align: center;
+    width: 100%;
+    margin: .4em 0;
+}
+
+.work_example a{
+    font-weight: 300;
+    color: #555;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 3em;
 }
